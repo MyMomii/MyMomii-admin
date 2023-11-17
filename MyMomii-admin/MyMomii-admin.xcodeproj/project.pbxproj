@@ -11,6 +11,12 @@
 		7D7C0F622B06EAD400E2917A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0F612B06EAD400E2917A /* ContentView.swift */; };
 		7D7C0F642B06EAD500E2917A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C0F632B06EAD500E2917A /* Assets.xcassets */; };
 		7D7C0F672B06EAD500E2917A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C0F662B06EAD500E2917A /* Preview Assets.xcassets */; };
+		7D7C0F7D2B06EF3A00E2917A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0F7C2B06EF3A00E2917A /* FirebaseAnalytics */; };
+		7D7C0F7F2B06EF3A00E2917A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0F7E2B06EF3A00E2917A /* FirebaseAnalyticsOnDeviceConversion */; };
+		7D7C0F812B06EF3A00E2917A /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0F802B06EF3A00E2917A /* FirebaseAnalyticsSwift */; };
+		7D7C0F832B06EF3A00E2917A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0F822B06EF3A00E2917A /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		7D7C0F852B06EF3A00E2917A /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0F842B06EF3A00E2917A /* FirebaseAppCheck */; };
+		7D7C0F882B06EF4900E2917A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0F872B06EF4900E2917A /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7C0F812B06EF3A00E2917A /* FirebaseAnalyticsSwift in Frameworks */,
+				7D7C0F882B06EF4900E2917A /* FSCalendar in Frameworks */,
+				7D7C0F7D2B06EF3A00E2917A /* FirebaseAnalytics in Frameworks */,
+				7D7C0F7F2B06EF3A00E2917A /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				7D7C0F852B06EF3A00E2917A /* FirebaseAppCheck in Frameworks */,
+				7D7C0F832B06EF3A00E2917A /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,14 @@
 			dependencies = (
 			);
 			name = "MyMomii-admin";
+			packageProductDependencies = (
+				7D7C0F7C2B06EF3A00E2917A /* FirebaseAnalytics */,
+				7D7C0F7E2B06EF3A00E2917A /* FirebaseAnalyticsOnDeviceConversion */,
+				7D7C0F802B06EF3A00E2917A /* FirebaseAnalyticsSwift */,
+				7D7C0F822B06EF3A00E2917A /* FirebaseAnalyticsWithoutAdIdSupport */,
+				7D7C0F842B06EF3A00E2917A /* FirebaseAppCheck */,
+				7D7C0F872B06EF4900E2917A /* FSCalendar */,
+			);
 			productName = "MyMomii-admin";
 			productReference = 7D7C0F5C2B06EAD400E2917A /* MyMomii-admin.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 7D7C0F532B06EAD400E2917A;
+			packageReferences = (
+				7D7C0F7B2B06EF3A00E2917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7D7C0F862B06EF4900E2917A /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 7D7C0F5D2B06EAD400E2917A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,6 +366,58 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D7C0F7B2B06EF3A00E2917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+		7D7C0F862B06EF4900E2917A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D7C0F7C2B06EF3A00E2917A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7C0F7B2B06EF3A00E2917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		7D7C0F7E2B06EF3A00E2917A /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7C0F7B2B06EF3A00E2917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		7D7C0F802B06EF3A00E2917A /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7C0F7B2B06EF3A00E2917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		7D7C0F822B06EF3A00E2917A /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7C0F7B2B06EF3A00E2917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		7D7C0F842B06EF3A00E2917A /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7C0F7B2B06EF3A00E2917A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		7D7C0F872B06EF4900E2917A /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7C0F862B06EF4900E2917A /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D7C0F542B06EAD400E2917A /* Project object */;
 }
