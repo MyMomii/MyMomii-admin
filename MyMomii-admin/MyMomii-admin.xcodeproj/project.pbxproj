@@ -45,6 +45,7 @@
 		7D7C0FBC2B06F15D00E2917A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0FBB2B06F15D00E2917A /* FirebaseStorage */; };
 		7D7C0FBE2B06F15D00E2917A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0FBD2B06F15D00E2917A /* FirebaseStorageCombine-Community */; };
 		7D7C0FC22B06F75F00E2917A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C0FC12B06F75F00E2917A /* GoogleService-Info.plist */; };
+		7D7C0FC52B06F87D00E2917A /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C0FC42B06F87D00E2917A /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		7D7C0F632B06EAD500E2917A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D7C0F662B06EAD500E2917A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7D7C0FC12B06F75F00E2917A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7D7C0FC42B06F87D00E2917A /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		7D7C0F532B06EAD400E2917A = {
 			isa = PBXGroup;
 			children = (
+				7D7C0FC42B06F87D00E2917A /* .swiftlint.yml */,
 				7D7C0F5E2B06EAD400E2917A /* MyMomii-admin */,
 				7D7C0F5D2B06EAD400E2917A /* Products */,
 			);
@@ -146,6 +149,7 @@
 				7D7C0F582B06EAD400E2917A /* Sources */,
 				7D7C0F592B06EAD400E2917A /* Frameworks */,
 				7D7C0F5A2B06EAD400E2917A /* Resources */,
+				7D7C0FC32B06F81C00E2917A /* Swift Script */,
 			);
 			buildRules = (
 			);
@@ -234,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7C0FC52B06F87D00E2917A /* .swiftlint.yml in Resources */,
 				7D7C0F672B06EAD500E2917A /* Preview Assets.xcassets in Resources */,
 				7D7C0FC22B06F75F00E2917A /* GoogleService-Info.plist in Resources */,
 				7D7C0F642B06EAD500E2917A /* Assets.xcassets in Resources */,
@@ -241,6 +246,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D7C0FC32B06F81C00E2917A /* Swift Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D7C0F582B06EAD400E2917A /* Sources */ = {
@@ -383,6 +410,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMomii-admin/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -414,6 +442,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MyMomii-admin/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
