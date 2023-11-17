@@ -64,6 +64,11 @@
 		7D7C0FEA2B07327A00E2917A /* AdminSpecificHistoryModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0FDB2B07327A00E2917A /* AdminSpecificHistoryModalView.swift */; };
 		7D7C0FEB2B07327A00E2917A /* AdminSpecificView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0FDC2B07327A00E2917A /* AdminSpecificView.swift */; };
 		7D7C0FEC2B07327A00E2917A /* NextMensInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0FDD2B07327A00E2917A /* NextMensInfoView.swift */; };
+		7D7C0FF52B0733DC00E2917A /* SettingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0FF02B0733DC00E2917A /* SettingMainView.swift */; };
+		7D7C0FF62B0733DC00E2917A /* SettingNotiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0FF12B0733DC00E2917A /* SettingNotiView.swift */; };
+		7D7C0FF72B0733DC00E2917A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0FF22B0733DC00E2917A /* NotificationManager.swift */; };
+		7D7C0FF82B0733DC00E2917A /* SettingComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0FF32B0733DC00E2917A /* SettingComponents.swift */; };
+		7D7C0FF92B0733DC00E2917A /* SettingGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0FF42B0733DC00E2917A /* SettingGuideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +97,11 @@
 		7D7C0FDB2B07327A00E2917A /* AdminSpecificHistoryModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminSpecificHistoryModalView.swift; sourceTree = "<group>"; };
 		7D7C0FDC2B07327A00E2917A /* AdminSpecificView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminSpecificView.swift; sourceTree = "<group>"; };
 		7D7C0FDD2B07327A00E2917A /* NextMensInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextMensInfoView.swift; sourceTree = "<group>"; };
+		7D7C0FF02B0733DC00E2917A /* SettingMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingMainView.swift; sourceTree = "<group>"; };
+		7D7C0FF12B0733DC00E2917A /* SettingNotiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNotiView.swift; sourceTree = "<group>"; };
+		7D7C0FF22B0733DC00E2917A /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		7D7C0FF32B0733DC00E2917A /* SettingComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingComponents.swift; sourceTree = "<group>"; };
+		7D7C0FF42B0733DC00E2917A /* SettingGuideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingGuideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +168,12 @@
 		7D7C0F5E2B06EAD400E2917A /* MyMomii-admin */ = {
 			isa = PBXGroup;
 			children = (
+				7D7C0FEF2B0733C600E2917A /* SettingViews */,
+				7D7C0FF22B0733DC00E2917A /* NotificationManager.swift */,
+				7D7C0FF32B0733DC00E2917A /* SettingComponents.swift */,
+				7D7C0FF42B0733DC00E2917A /* SettingGuideView.swift */,
+				7D7C0FF02B0733DC00E2917A /* SettingMainView.swift */,
+				7D7C0FF12B0733DC00E2917A /* SettingNotiView.swift */,
 				7D7C0FCE2B07322D00E2917A /* AdminViews */,
 				7D7C0FC72B06FE0A00E2917A /* Util */,
 				7D7C0FC62B06FBD300E2917A /* Resources */,
@@ -215,6 +231,13 @@
 				7D7C0FD92B07327A00E2917A /* ToolbarBellView.swift */,
 			);
 			path = AdminViews;
+			sourceTree = "<group>";
+		};
+		7D7C0FEF2B0733C600E2917A /* SettingViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +378,7 @@
 				7D7C0FE62B07327A00E2917A /* AdminAlarmListView.swift in Sources */,
 				7D7C0F622B06EAD400E2917A /* ContentView.swift in Sources */,
 				7D7C0FE02B07327A00E2917A /* AdminCalView.swift in Sources */,
+				7D7C0FF62B0733DC00E2917A /* SettingNotiView.swift in Sources */,
 				7D7C0FEB2B07327A00E2917A /* AdminSpecificView.swift in Sources */,
 				7D7C0F602B06EAD400E2917A /* MyMomiiAdminApp.swift in Sources */,
 				7D7C0FE52B07327A00E2917A /* TodayMensInfoView.swift in Sources */,
@@ -364,14 +388,18 @@
 				7D7C0FE42B07327A00E2917A /* MensStatusView.swift in Sources */,
 				7D7C0FEC2B07327A00E2917A /* NextMensInfoView.swift in Sources */,
 				7D7C0FCD2B06FE2A00E2917A /* DeviceSize.swift in Sources */,
+				7D7C0FF52B0733DC00E2917A /* SettingMainView.swift in Sources */,
 				7D7C0FE32B07327A00E2917A /* AdminMainView.swift in Sources */,
 				7D7C0FE72B07327A00E2917A /* AdminCalModalView.swift in Sources */,
+				7D7C0FF92B0733DC00E2917A /* SettingGuideView.swift in Sources */,
 				7D7C0FCB2B06FE2A00E2917A /* TextModifier.swift in Sources */,
 				7D7C0FE12B07327A00E2917A /* AdminMngView.swift in Sources */,
 				7D7C0FE82B07327A00E2917A /* ToolbarBellView.swift in Sources */,
 				7D7C0FEA2B07327A00E2917A /* AdminSpecificHistoryModalView.swift in Sources */,
 				7D7C0FDE2B07327A00E2917A /* AdminNewCardView.swift in Sources */,
 				7D7C0FDF2B07327A00E2917A /* AdminMMSView.swift in Sources */,
+				7D7C0FF82B0733DC00E2917A /* SettingComponents.swift in Sources */,
+				7D7C0FF72B0733DC00E2917A /* NotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
