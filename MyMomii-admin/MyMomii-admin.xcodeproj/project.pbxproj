@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D7C0F602B06EAD400E2917A /* MyMomii_adminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0F5F2B06EAD400E2917A /* MyMomii_adminApp.swift */; };
+		7D7C0F602B06EAD400E2917A /* MyMomiiAdminApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0F5F2B06EAD400E2917A /* MyMomiiAdminApp.swift */; };
 		7D7C0F622B06EAD400E2917A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7C0F612B06EAD400E2917A /* ContentView.swift */; };
 		7D7C0F642B06EAD500E2917A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C0F632B06EAD500E2917A /* Assets.xcassets */; };
 		7D7C0F672B06EAD500E2917A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C0F662B06EAD500E2917A /* Preview Assets.xcassets */; };
@@ -50,7 +50,7 @@
 
 /* Begin PBXFileReference section */
 		7D7C0F5C2B06EAD400E2917A /* MyMomii-admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MyMomii-admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D7C0F5F2B06EAD400E2917A /* MyMomii_adminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMomii_adminApp.swift; sourceTree = "<group>"; };
+		7D7C0F5F2B06EAD400E2917A /* MyMomiiAdminApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMomiiAdminApp.swift; sourceTree = "<group>"; };
 		7D7C0F612B06EAD400E2917A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D7C0F632B06EAD500E2917A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D7C0F662B06EAD500E2917A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				7D7C0FC12B06F75F00E2917A /* GoogleService-Info.plist */,
-				7D7C0F5F2B06EAD400E2917A /* MyMomii_adminApp.swift */,
+				7D7C0F5F2B06EAD400E2917A /* MyMomiiAdminApp.swift */,
 				7D7C0F612B06EAD400E2917A /* ContentView.swift */,
 				7D7C0F632B06EAD500E2917A /* Assets.xcassets */,
 				7D7C0F652B06EAD500E2917A /* Preview Content */,
@@ -275,7 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7C0F622B06EAD400E2917A /* ContentView.swift in Sources */,
-				7D7C0F602B06EAD400E2917A /* MyMomii_adminApp.swift in Sources */,
+				7D7C0F602B06EAD400E2917A /* MyMomiiAdminApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

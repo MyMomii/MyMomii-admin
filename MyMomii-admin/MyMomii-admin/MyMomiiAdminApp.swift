@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct MyMomii_adminApp: App {
+struct MyMomiiAdminApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
