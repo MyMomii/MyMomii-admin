@@ -44,6 +44,7 @@
 		7D7C0FBA2B06F15D00E2917A /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0FB92B06F15D00E2917A /* FirebaseRemoteConfigSwift */; };
 		7D7C0FBC2B06F15D00E2917A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0FBB2B06F15D00E2917A /* FirebaseStorage */; };
 		7D7C0FBE2B06F15D00E2917A /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7C0FBD2B06F15D00E2917A /* FirebaseStorageCombine-Community */; };
+		7D7C0FC22B06F75F00E2917A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D7C0FC12B06F75F00E2917A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		7D7C0F612B06EAD400E2917A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D7C0F632B06EAD500E2917A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D7C0F662B06EAD500E2917A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D7C0FC12B06F75F00E2917A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		7D7C0F5E2B06EAD400E2917A /* MyMomii-admin */ = {
 			isa = PBXGroup;
 			children = (
+				7D7C0FC12B06F75F00E2917A /* GoogleService-Info.plist */,
 				7D7C0F5F2B06EAD400E2917A /* MyMomii_adminApp.swift */,
 				7D7C0F612B06EAD400E2917A /* ContentView.swift */,
 				7D7C0F632B06EAD500E2917A /* Assets.xcassets */,
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D7C0F672B06EAD500E2917A /* Preview Assets.xcassets in Resources */,
+				7D7C0FC22B06F75F00E2917A /* GoogleService-Info.plist in Resources */,
 				7D7C0F642B06EAD500E2917A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
