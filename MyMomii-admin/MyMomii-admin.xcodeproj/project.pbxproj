@@ -169,11 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				7D7C0FEF2B0733C600E2917A /* SettingViews */,
-				7D7C0FF22B0733DC00E2917A /* NotificationManager.swift */,
-				7D7C0FF32B0733DC00E2917A /* SettingComponents.swift */,
-				7D7C0FF42B0733DC00E2917A /* SettingGuideView.swift */,
-				7D7C0FF02B0733DC00E2917A /* SettingMainView.swift */,
-				7D7C0FF12B0733DC00E2917A /* SettingNotiView.swift */,
 				7D7C0FCE2B07322D00E2917A /* AdminViews */,
 				7D7C0FC72B06FE0A00E2917A /* Util */,
 				7D7C0FC62B06FBD300E2917A /* Resources */,
@@ -236,6 +231,11 @@
 		7D7C0FEF2B0733C600E2917A /* SettingViews */ = {
 			isa = PBXGroup;
 			children = (
+				7D7C0FF22B0733DC00E2917A /* NotificationManager.swift */,
+				7D7C0FF32B0733DC00E2917A /* SettingComponents.swift */,
+				7D7C0FF42B0733DC00E2917A /* SettingGuideView.swift */,
+				7D7C0FF02B0733DC00E2917A /* SettingMainView.swift */,
+				7D7C0FF12B0733DC00E2917A /* SettingNotiView.swift */,
 			);
 			path = SettingViews;
 			sourceTree = "<group>";
