@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingMainView: View {
-    @Binding var eventsArray: [String]
+//    @Binding var eventsArray: [String]
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             HStack {
@@ -19,7 +19,7 @@ struct SettingMainView: View {
             .padding(EdgeInsets(top: 20, leading: 16, bottom: 20, trailing: 16))
             DividingRectangle(dividingType: .naviTitleDivider)
             Group {
-                NavigationLink(destination: SettingNotiView(isMensToday: true, eventsArray: $eventsArray)) {
+                NavigationLink(destination: SettingNotiView(isMensToday: true /*, eventsArray: $eventsArray */)) {
                     SettingList(listTitle: "알림을 받아요. ", listCaption: "마이모미에게 생리 시작 알림을 받을 수 있어요.")
                 }
                 NavigationLink(destination: SettingGuideView()) {
@@ -38,5 +38,6 @@ struct SettingMainView: View {
 }
 
 #Preview {
-    SettingMainView(eventsArray: .constant([]))
+//    SettingMainView(eventsArray: .constant([]))
+    SettingMainView()
 }

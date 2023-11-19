@@ -9,7 +9,7 @@ import SwiftUI
 struct SettingNotiView: View {
     @State var isMensToday = true
 //    @State var expect: String = "20231116"
-    @Binding var eventsArray: [String]
+//    @Binding var eventsArray: [String]
     
     var body: some View {
         VStack(spacing: 0) {
@@ -37,13 +37,13 @@ struct SettingNotiView: View {
                     ToggleList(toggleTitle: "생리 시작 알림", toggleIsOn: $isMensToday)
                     
                     // MARK: - 뷰 연결되면 .onChange로 바꿀 예정 (eventsArray 받아올 예정 : 상단에 binding 확인 & text에 onTapGesture 삭제)
-                        .onChange(of: eventsArray) { newValue in
-                            if eventsArray.count > 0 { // 이벤트 어레이에 값이 들어오면, 스케쥴링 해버림 (그때 날짜는 제일 첫번째)
-                                NotificationManager.instance.scheduleNotification(expectedDate: eventsArray[0])
-                            } else {
-                                NotificationManager.instance.cancelNotification()
-                            }
-                        }
+//                        .onChange(of: eventsArray) { newValue in
+//                            if eventsArray.count > 0 { // 이벤트 어레이에 값이 들어오면, 스케쥴링 해버림 (그때 날짜는 제일 첫번째)
+//                                NotificationManager.instance.scheduleNotification(expectedDate: eventsArray[0])
+//                            } else {
+//                                NotificationManager.instance.cancelNotification()
+//                            }
+//                        }
                 }
                 .font(.system(size: 16, weight: .medium))
                 .toggleStyle(SwitchToggleStyle(tint: .coral500))
@@ -65,5 +65,5 @@ struct SettingNotiView: View {
 }
 
 #Preview {
-    SettingNotiView(isMensToday: true, eventsArray: .constant([]))
+    SettingNotiView(isMensToday: true/*, eventsArray: .constant([])*/)
 }
