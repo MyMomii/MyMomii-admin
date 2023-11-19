@@ -25,15 +25,6 @@ struct MensStatusView: View {
                             // if 생리 시작 입력이 예정일로부터 14일간 입력되지 않은 사람이 있으면
                             checkMensNotStarted = true
                         }
-                        .alert(isPresented: $checkMensNotStarted) {
-                            Alert(
-                                title: Text("생리 시작 지연 알림"),
-                                message: Text("하월경의 생리 시작 입력이 예정일로부터 \n14일간 입력되지 않고 있습니다."),
-                                primaryButton: .default(Text("알림 중단"), action: {
-                                    // some Action
-                                }),
-                                secondaryButton: .default(Text("확인")))
-                        }
                     NextMensInfoView(title: "곧 생리 예정")
                     Spacer()
                 }
@@ -66,5 +57,5 @@ struct MensStatusView: View {
 }
 
 #Preview {
-    MensStatusView(selectedUserType: .constant(.notyet))
+    MensStatusView()
 }

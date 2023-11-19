@@ -10,7 +10,7 @@ import SwiftUI
 struct AdminMainView: View {
     var body: some View {
         TabView {
-            MensStatusView(selectedUserType: .constant(.notyet))
+            MensStatusView()
                 .tabItem {
                     Image(systemName: "drop.fill")
                     Text("생리 현황")
