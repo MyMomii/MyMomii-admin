@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MensStatusView: View {
-    @Binding var selectedUserType: ContentView.LoginType
     @State private var showNew = false
     @State private var checkMensNotStarted = false
     let dateformat: DateFormatter = {
@@ -57,7 +56,7 @@ struct MensStatusView: View {
                     }
                 }
                 .toolbarBackground(Color.white300, for: .navigationBar)
-                .navigationDestination(isPresented: $showNew) { SettingMainView(selectedUserType: $selectedUserType, userName: "이김생리")
+                .navigationDestination(isPresented: $showNew) { SettingMainView()
                 }
                 .navigationTitle(Text("\(dateformat.string(from: Date()))"))
             }
